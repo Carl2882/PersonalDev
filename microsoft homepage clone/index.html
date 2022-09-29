@@ -8,6 +8,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div class="menu-btn">
+	<i class="fas fa-bars fa-2x"></i>
+</div>
+
 	<div class="container">
 		<!--NAV-->
 		<nav class="main-nav">
@@ -207,6 +211,10 @@
 		</div>
 		
 	</footer>
+
+	<script type="text/javascript">
+		document.querySelector('.menu-btn').addEventListener('click',() => document.querySelector('.main-menu').classList.toggle('show'))
+	</script>
 	
 </body>
 </html>
