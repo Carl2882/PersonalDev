@@ -87,7 +87,7 @@ main-nav ul li a:{
 
 /*showcase*/
 .showcase{
-	width: 1100px;
+	max-width: 1100px;
 	height: 400px;
 	background: url(showcase.png) no-repeat center center/cover;
 	display: flex;
@@ -133,7 +133,7 @@ main-nav ul li a:{
 
 
 .xbox{
-	width: 1100px;
+	max-width: 1100px;
 	height: 300px;
 	background: url(xbox.png) no-repeat center center/cover;
 	margin-bottom: 20px;
@@ -151,7 +151,7 @@ main-nav ul li a:{
 
 /*carbon*/
 .carbon{
-	width: 1100px;
+	max-width: 1100px;
 	height: 350px;
 	background: url(carbon.jpg) no-repeat center center/cover;
 	margin-bottom: 20px;
@@ -221,3 +221,36 @@ main-nav ul li a:{
  .footer li{
  	margin-right: 20px;
  }
+
+ @media(max-width: 700px){
+	.home-cards{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.xbox .content p{
+		display: none;
+	}
+	.carbon .content{
+		width: 85%;
+	}
+	.links .links-inner{
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+	.footer ul{
+	flex-wrap: wrap;
+	}
+
+}
+@media(max-width: 500px){
+	.home-cards{
+		grid-template-columns:1fr;
+}
+.links .links-inner{
+		grid-template-columns:1fr;
+	}
+	.links .links-inner ul{
+		margin-bottom: 20px;
+	}
+
+	
+}
